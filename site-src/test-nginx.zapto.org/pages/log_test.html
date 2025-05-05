@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log-test</title>
+</head>
+<body>
+    <h1>CPU Load: <span id="cpu-load"></span></h1>
+    <script>
+        function updateCpu() {
+            fetch('https://test-nginx.zapto.org/cpu.php')
+	    setTimeout(updateCpu, 20);
+        }
+        
+        updateCpu();
+    </script>
+</body>
+</html>
