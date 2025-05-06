@@ -10,5 +10,6 @@ COPY ./nginx.conf /etc/nginx/nginx.conf
 USER filifel
 
 EXPOSE 80
+EXPOSE 443
 
-CMD nginx -g 'daemon off'
+CMD ["nginx", "-g", "daemon off;"]
