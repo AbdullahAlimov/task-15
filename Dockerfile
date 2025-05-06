@@ -9,4 +9,6 @@ COPY ./nginx.conf /etc/nginx/nginx.conf
 
 USER filifel
 
+EXPOSE 80
+
 CMD nginx -g 'daemon off'
